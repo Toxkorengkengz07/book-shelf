@@ -1,0 +1,194 @@
+/* Mengatur elemen dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  background: blue;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya form input */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="checkbox"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  background-color: #0e2cd2;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #1ba1bb;
+}
+
+button[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#incompleteBookList,
+#completeBookList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+[data-testid="bookItem"] {
+  background-color: #fdfdfd;
+  padding: 15px;
+  border-left: 5px solid #d00b0b;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-testid="completeBookList"] [data-testid="bookItem"] {
+  border-left-color: #2ecc71;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+[data-testid="bookItem"] div {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Tombol Aksi */
+button[data-testid="bookItemIsCompleteButton"],
+button[data-testid="bookItemDeleteButton"],
+button[data-testid="bookItemEditButton"] {
+  padding: 7px 12px;
+  font-size: 0.9rem;
+}
+
+button[data-testid="bookItemIsCompleteButton"] {
+  background-color: #0e2cd2;
+}
+
+button[data-testid="bookItemIsCompleteButton"]:hover {
+  background-color: #3737b6;
+}
+
+button[data-testid="bookItemDeleteButton"] {
+  background-color: #ff0000;
+}
+
+button[data-testid="bookItemDeleteButton"]:hover {
+  background-color: #b34b43;
+}
+
+button[data-testid="bookItemEditButton"] {
+  background-color: #f39c12;
+}
+
+button[data-testid="bookItemEditButton"]:hover {
+  background-color: #e67e22;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  main {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  form {
+    gap: 10px;
+  }
+}
